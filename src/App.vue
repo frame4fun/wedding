@@ -12,6 +12,11 @@ import NavBar from "./components/NavBar.vue";
 <style>
 @import "@/assets/base.css";
 
+@font-face {
+  font-family: "Allura";
+  src: local("Allura"),   url(./assets/fonts/Allura/Allura-Regular.ttf) format("truetype");
+  }
+
 #app {
   font-weight: normal;
   height: 100%;
