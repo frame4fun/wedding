@@ -29,6 +29,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--white);
 }
 
 .column {
@@ -39,17 +40,16 @@ export default {
   height: 120px;
   width: 120px;
   border-radius: 100%;
-  border: 1px dotted var(--white);
+  border: 3px dotted hsla(var(--pink), 1);
+  background-color: hsla(var(--pink), 0.8);
 }
 
 .daysLeft {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--white);
 }
 
 .text {
   font-size: 1rem;
-  color: var(--white);
 }
 </style>
