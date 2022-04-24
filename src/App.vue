@@ -10,7 +10,7 @@ import NavBar from "./components/NavBar.vue";
 </template>
 
 <style>
-@import "@/assets/base.css";
+@import "./assets/base.css";
 
 @font-face {
   font-family: "Allura";
@@ -19,8 +19,9 @@ import NavBar from "./components/NavBar.vue";
 }
 
 #app {
-  font-weight: normal;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 a {
@@ -32,13 +33,6 @@ a {
 @media (hover: hover) {
   a:hover {
     background-color: hsla(var(--violet), 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  #app {
-    display: flex;
-    flex-direction: column;
   }
 }
 </style>

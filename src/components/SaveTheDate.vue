@@ -56,11 +56,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
   color: var(--white);
 }
 .names {
-  font-size: 8rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: hsla(var(--pink), 1);
@@ -68,7 +68,7 @@ export default {
 }
 
 .date {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: hsla(var(--orange), 1);
@@ -84,5 +84,15 @@ export default {
 .info {
   font-size: 2rem;
   color: var(--white);
+}
+
+@media (min-width: 1024px) {
+  .names {
+    font-size: 8rem;
+  }
+
+  .date {
+    font-size: 4rem;
+  }
 }
 </style>

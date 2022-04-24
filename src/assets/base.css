@@ -22,12 +22,6 @@
   --section-gap: 160px;
 }
 
-/* height and width for this project */
-:root {
-  height: 100%;
-  width: 100%;
-}
-
 *,
 *::before,
 *::after {
@@ -48,6 +42,4 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
-  width: 100%;
 }
