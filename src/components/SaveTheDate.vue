@@ -2,14 +2,34 @@
 import CountDown from "./CountDown.vue";
 </script>
 
+<script lang="ts">
+export default {
+  data() {
+    return {
+      date: new Date(2023, 5, 24, 16),
+    };
+  },
+  computed: {
+    formattedDate() {
+      return this.date.toLocaleDateString(undefined, {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+    },
+  },
+};
+</script>
+
 <template>
   <div class="background-image">
     <div class="transparent-overlay">
       <div class="text-content">
         <h1 class="names">Alice & Guillaume</h1>
         <span>On se marie</span>
-        <h2>24/06/2023</h2>
-        <CountDown />
+        <h2>{{ formattedDate }}</h2>
+        <CountDown :date="date" />
       </div>
     </div>
   </div>

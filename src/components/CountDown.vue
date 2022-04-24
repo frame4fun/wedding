@@ -2,12 +2,14 @@
 
 <script lang="ts">
 export default {
+  props: {
+    date: Date,
+  },
   data() {
     const now = new Date();
-    const date = new Date(2023, 6, 24, 16);
 
     return {
-      time: date.getTime() - now.getTime(),
+      time: this.date.getTime() - now.getTime(),
     };
   },
 };
