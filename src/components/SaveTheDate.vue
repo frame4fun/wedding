@@ -6,7 +6,7 @@ import CountDown from "./CountDown.vue";
   <div class="background-image">
     <div class="transparent-overlay">
       <div class="text-content">
-        <h1>Alice & Guillaume</h1>
+        <h1 class="names">Alice & Guillaume</h1>
         <span>se marient</span>
         <h2>24/06/2023</h2>
         <CountDown />
@@ -37,5 +37,14 @@ import CountDown from "./CountDown.vue";
   align-items: center;
   padding: 0 2rem;
   color: var(--white);
+}
+.names {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background-color: var(--white);
+  color: hsla(var(--violet), 1);
+  padding: 20px;
+  border-radius: 50px;
 }
 </style>
