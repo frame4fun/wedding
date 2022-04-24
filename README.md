@@ -50,3 +50,11 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+
+### Links for inspiration
+https://www.wix.com/website-template/view/html/1809
+https://www.wix.com/website-template/view/html/1881
+https://www.wix.com/website-template/view/html/1907
+https://nicepage.com/fr/s/222723/couleurs-de-mariage-dete-modele-css
+https://webypress.fr/16-beaux-modeles-de-sites-web-pour-mariages-html-2019/
+
