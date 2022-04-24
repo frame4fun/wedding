@@ -39,19 +39,19 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
   border: 3px dotted hsla(var(--pink), 1);
   background-color: hsla(var(--pink), 0.8);
 }
 
 .daysLeft {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 .text {
-  font-size: 1rem;
+  font-size: 1.7rem;
 }
 </style>

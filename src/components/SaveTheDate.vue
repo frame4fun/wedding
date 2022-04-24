@@ -26,9 +26,10 @@ export default {
   <div class="background-image">
     <div class="transparent-overlay">
       <div class="text-content">
+        <span class="info">On se marie !</span>
         <h1 class="names">Alice & Guillaume</h1>
-        <span>On se marie</span>
-        <h2>{{ formattedDate }}</h2>
+        <span class="divider" />
+        <h2 class="date">{{ formattedDate }}</h2>
         <CountDown :date="date" />
       </div>
     </div>
@@ -61,8 +62,27 @@ export default {
 .names {
   font-size: 8rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: hsla(var(--pink), 1);
   font-family: Allura;
+}
+
+.date {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: hsla(var(--orange), 1);
+  font-family: Allura;
+}
+
+.divider {
+  width: 100%;
+  border-top: 3px solid hsla(var(--violet), 1);
+  margin-bottom: 1.5rem;
+}
+
+.info {
+  font-size: 2rem;
+  color: var(--white);
 }
 </style>
