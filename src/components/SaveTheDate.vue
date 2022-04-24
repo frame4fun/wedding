@@ -38,7 +38,6 @@ export default {
 
 <style scoped>
 .background-image {
-  background-color: white;
   background-image: url("../assets/IMG_3359.jpeg");
   background-size: cover;
   background-position: center bottom;
@@ -57,7 +56,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  color: var(--white);
+  color: var(--color-text);
 }
 .names {
   font-size: 3rem;
@@ -83,7 +82,7 @@ export default {
 
 .info {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--color-text);
 }
 
 @media (min-width: 1024px) {

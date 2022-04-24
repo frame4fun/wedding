@@ -31,7 +31,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
+  color: var(--color-text);
 }
 
 .column {

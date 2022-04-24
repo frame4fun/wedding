@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
 import NavBar from "./components/NavBar.vue";
+import SaveTheDate from "./components/SaveTheDate.vue";
 </script>
 
 <template>
   <NavBar />
 
-  <RouterView />
+  <main>
+    <SaveTheDate />
+  </main>
 </template>
 
 <style>
@@ -26,13 +28,19 @@ import NavBar from "./components/NavBar.vue";
 
 a {
   text-decoration: none;
-  color: hsla(var(--blue), 1);
+  color: var(--color-link);
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(var(--violet), 0.2);
+    color: var(--color-link-hover);
   }
+}
+</style>
+
+<style scoped>
+main {
+  height: 100%;
 }
 </style>

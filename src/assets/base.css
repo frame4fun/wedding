@@ -5,19 +5,22 @@
   --red: 347, 35%, 55%;
   --pink: 358, 70%, 66%;
   --orange: 21, 69%, 73%;
-  --white: white;
-  --black: black;
+  --white: 0, 0%, 100%;
+  --black: 0, 0%, 0%;
 }
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--white);
+  --color-border: hsla(var(--blue), 1);
+  --color-border-hover: hsla(var(--violet), 1);
 
-  --color-border: var(---blue);
-  --color-border-hover: var(--violet);
+  --color-text: hsla(var(--white), 1);
+  --color-text-hover: hsla(var(--blue), 1);
 
-  --color-heading: var(--blue);
-  --color-text: var(--blue);
+  --color-link: hsla(var(--blue), 1);
+  --color-link-hover: hsla(var(--violet), 1);
+
+  --background-color: hsla(var(--pink), 1);
 
   --section-gap: 160px;
 }

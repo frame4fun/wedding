@@ -1,11 +1,37 @@
-<script setup lang="ts">
-import { RouterLink } from "vue-router";
+<script setup lang="ts"></script>
+
+<script lang="ts">
+export default {
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    openMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
+  computed: {
+    classOpen() {
+      return {
+        open: this.isMenuOpen,
+      };
+    },
+  },
+};
 </script>
 
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Accueil</RouterLink>
+      <a href="#" @click="openMenu"
+        ><span class="burger" :class="classOpen"></span
+      ></a>
+      <ul :class="classOpen">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Le Lieu</a></li>
+      </ul>
     </nav>
   </header>
 </template>
@@ -14,48 +40,102 @@ import { RouterLink } from "vue-router";
 header {
   line-height: 1.5;
   max-height: 100vh;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 nav {
   width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
+.burger {
+  width: 30px;
+  height: 2px;
+  background: var(--color-text);
   display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  position: relative;
 }
 
-nav a:first-of-type {
-  border: 0;
+.burger::before,
+.burger::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: var(--color-text);
+  display: inline-block;
+  position: absolute;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+.burger::before {
+  top: -7px;
+  left: 0;
+}
+.burger::after {
+  top: 7px;
+  left: 0;
+}
+
+.burger.open {
+  background: transparent; /* la barre du milieu disparait */
+}
+/* celles du haut et du bas s'inclinent pour former une croix */
+.burger.open::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.burger.open::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+ul {
+  background: var(--background-color);
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 100%;
+  padding: 10px 0;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: all 0.3s ease;
+  list-style-type: none;
+}
+ul.open {
+  transform: scaleX(1);
+}
+ul li {
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul li a {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-    padding: 0 2rem;
+  ul {
+    width: 20%;
   }
+}
 
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+@media (hover: hover) {
+  ul li a:hover {
+    color: var(--color-link-hover);
   }
 }
 </style>
