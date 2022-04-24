@@ -3,31 +3,39 @@ import CountDown from "./CountDown.vue";
 </script>
 
 <template>
-<div class="background-image">
-  <div class="transparent-overlay">
+  <div class="background-image">
+    <div class="transparent-overlay">
       <div class="text-content">
-        <div>Mariage Alice & Guillaume</div>
-        <div>Save the date : 24/06/2023</div>
+        <h1>Alice & Guillaume</h1>
+        <span>se marient</span>
+        <h2>24/06/2023</h2>
         <CountDown />
       </div>
+    </div>
   </div>
-</div>
 </template>
+
 <style scoped>
 .background-image {
   background-color: white;
-    background-image: url("../assets/IMG_3359.jpeg");
-    background-size: cover;
-    background-position: center bottom;
+  background-image: url("../assets/IMG_3359.jpeg");
+  background-size: cover;
+  background-position: center bottom;
   height: 100%;
 }
 .transparent-overlay {
-  opacity: 30%;
-  background-color: var(--pink);
+  background-color: hsla(var(--pink), 0.3);
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 2rem;
+  color: var(--white);
 }
 </style>
-

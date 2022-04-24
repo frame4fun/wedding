@@ -1,13 +1,12 @@
 /* color palette from <https://coolors.co/355070-6d597a-b56576-e56b6f-eaac8b> */
 :root {
---blue: hsla(213, 36%, 32%, 1);
---violet: hsla(276, 16%, 41%, 1);
---red: hsla(347, 35%, 55%, 1);
---pink: hsla(358, 70%, 66%, 1);
---orange: hsla(21, 69%, 73%, 1);
---white:white;
---black: black;
-
+  --blue: 213, 36%, 32%;
+  --violet: 276, 16%, 41%;
+  --red: 347, 35%, 55%;
+  --pink: 358, 70%, 66%;
+  --orange: 21, 69%, 73%;
+  --white: white;
+  --black: black;
 }
 
 /* semantic color variables for this project */
@@ -25,7 +24,7 @@
 
 /* height and width for this project */
 :root {
-  height: 100%; 
+  height: 100%;
   width: 100%;
 }
 

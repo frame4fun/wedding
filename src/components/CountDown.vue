@@ -4,23 +4,52 @@
 export default {
   data() {
     const now = new Date();
-    const newYear = new Date(now.getFullYear() + 1, 0, 1);
+    const date = new Date(2023, 6, 24, 16);
 
     return {
-      time: newYear - now,
+      time: date.getTime() - now.getTime(),
     };
   },
 };
 </script>
 
 <template>
-  <vue-countdown
-    :time="time"
-    :interval="100"
-    v-slot="{ days, hours, minutes, seconds, milliseconds }"
-  >
-    New Year Countdown：{{ days }} days, {{ hours }} hours,
-    {{ minutes }} minutes, {{ seconds }}.{{ Math.floor(milliseconds / 100) }}
-    seconds.
-  </vue-countdown>
+  <div class="countdown">
+    <vue-countdown :time="time" v-slot="{ days }">
+      <div class="column">
+        <span class="daysLeft">{{ days }}</span>
+        <h3 class="text">jours</h3>
+      </div>
+    </vue-countdown>
+  </div>
 </template>
+
+<style scoped>
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  border: 1px dotted var(--white);
+}
+
+.daysLeft {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--white);
+}
+</style>
