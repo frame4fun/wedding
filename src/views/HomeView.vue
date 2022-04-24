@@ -7,3 +7,8 @@ import SaveTheDate from "../components/SaveTheDate.vue";
     <SaveTheDate />
   </main>
 </template>
+<style scoped>
+main {
+  height: 100%;
+}
+</style>
