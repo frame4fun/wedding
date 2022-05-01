@@ -39,7 +39,11 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 .background-image {
-  background-image: url("../assets/IMG_3359.jpeg");
+  background-image: url("../assets/Guillaume-Alice-001.jpeg");
+  background-image: image-set(
+    url("../assets/IMG_3359.jpeg") 0.5x,
+    url("../assets/Guillaume-Alice-001.jpeg") 1x
+  );
   background-size: cover;
   background-position: center bottom;
   height: 100%;

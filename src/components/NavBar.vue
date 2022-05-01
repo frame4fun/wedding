@@ -51,7 +51,7 @@ nav {
   padding: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
