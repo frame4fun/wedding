@@ -83,7 +83,7 @@ export default {
 }
 
 .info {
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: var(--color-text);
 }
 
@@ -99,6 +99,10 @@ export default {
   .date {
     font-size: 2rem;
   }
+
+  .info {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -112,6 +116,10 @@ export default {
 
   .date {
     font-size: 2.5rem;
+  }
+
+  .info {
+    font-size: 1.8rem;
   }
 }
 
@@ -127,15 +135,9 @@ export default {
   .date {
     font-size: 3rem;
   }
-}
 
-@media (max-width: 375px) {
-  .names {
+  .info {
     font-size: 2rem;
-  }
-
-  .date {
-    font-size: 1.8rem;
   }
 }
 </style>
