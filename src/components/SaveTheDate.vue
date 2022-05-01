@@ -99,4 +99,14 @@ export default {
     font-size: 4rem;
   }
 }
+
+@media (max-width: 375px) {
+  .names {
+    font-size: 2.5rem;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+}
 </style>
