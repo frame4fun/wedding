@@ -37,6 +37,7 @@ export default {
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 .background-image {
   background-image: url("../assets/IMG_3359.jpeg");
   background-size: cover;

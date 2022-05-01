@@ -14,12 +14,6 @@ import SaveTheDate from "./components/SaveTheDate.vue";
 <style>
 @import "./assets/base.css";
 
-@font-face {
-  font-family: "Allura";
-  src: local("Allura"),
-    url(./assets/fonts/Allura/Allura-Regular.ttf) format("truetype");
-}
-
 #app {
   display: flex;
   flex-direction: column;
