@@ -102,11 +102,11 @@ export default {
 
 @media (max-width: 375px) {
   .names {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .date {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 </style>

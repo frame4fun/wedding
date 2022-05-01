@@ -78,4 +78,26 @@ export default {
     transform: scale(1);
   }
 }
+
+@media (max-width: 375px) {
+
+  .column {
+  line-height: 2rem;
+}
+
+.daysLeft {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.heart {
+  top: 1rem;
+  width: 150px;
+  height: 150px;
+}
+}
 </style>
