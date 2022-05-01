@@ -37,13 +37,9 @@ export default {
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 .background-image {
-  background-image: url("../assets/Guillaume-Alice-001.jpeg");
-  background-image: image-set(
-    url("../assets/IMG_3359.jpeg") 0.5x,
-    url("../assets/Guillaume-Alice-001.jpeg") 1x
-  );
+  background-image: url("../assets/Guillaume-Alice-mobile.jpeg");
   background-size: cover;
   background-position: center bottom;
   height: 100%;
@@ -62,9 +58,10 @@ export default {
   align-items: center;
   padding: 0 1rem;
   color: var(--color-text);
+  text-align: center;
 }
 .names {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: hsla(var(--pink), 1);
@@ -72,7 +69,7 @@ export default {
 }
 
 .date {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: hsla(var(--orange), 1);
@@ -90,13 +87,45 @@ export default {
   color: var(--color-text);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  .background-image {
+    background-image: url("../assets/Guillaume-Alice-tablet.jpeg");
+  }
+
   .names {
-    font-size: 8rem;
+    font-size: 3rem;
   }
 
   .date {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .background-image {
+    background-image: url("../assets/Guillaume-Alice-desktop.jpeg");
+  }
+
+  .names {
     font-size: 4rem;
+  }
+
+  .date {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .background-image {
+    background-image: url("../assets/Guillaume-Alice-desktop-large.jpeg");
+  }
+
+  .names {
+    font-size: 5rem;
+  }
+
+  .date {
+    font-size: 3rem;
   }
 }
 

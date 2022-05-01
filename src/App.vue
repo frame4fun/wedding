@@ -4,7 +4,7 @@ import SaveTheDate from "./components/SaveTheDate.vue";
 </script>
 
 <template>
-  <NavBar />
+  <!-- <NavBar /> -->
 
   <main>
     <SaveTheDate />

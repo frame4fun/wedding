@@ -50,19 +50,19 @@ export default {
 }
 
 .daysLeft {
-  font-size: 3rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
 .text {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .heart {
   fill: hsla(var(--pink), 0.8);
   position: relative;
-  top: -7px;
-  width: 200px;
+  top: 10px;
+  width: 150;
   animation: pulse 1s ease infinite;
   position: absolute;
 }
@@ -79,25 +79,48 @@ export default {
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  .daysLeft {
+    font-size: 1.5rem;
+  }
 
-  .column {
-  line-height: 2rem;
+  .text {
+    font-size: 1rem;
+  }
+
+  .heart {
+    top: 10px;
+    width: 100;
+  }
 }
 
-.daysLeft {
-  font-size: 1.5rem;
-  font-weight: bold;
+@media (min-width: 769px) and (max-width: 1200px) {
+  .daysLeft {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .heart {
+    top: 10px;
+    width: 150px;
+  }
 }
 
-.text {
-  font-size: 1.5rem;
-}
+@media (min-width: 1201px) {
+  .daysLeft {
+    font-size: 3rem;
+  }
 
-.heart {
-  top: 1rem;
-  width: 150px;
-  height: 150px;
-}
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .heart {
+    top: -7px;
+    width: 200px;
+  }
 }
 </style>
