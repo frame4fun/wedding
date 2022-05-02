@@ -6,12 +6,12 @@ import CountDown from "./CountDown.vue";
 export default {
   data() {
     return {
-      date: new Date(2023, 5, 24, 16),
+      date: new Date(2023, 5, 24),
     };
   },
   computed: {
     formattedDate() {
-      return this.date.toLocaleDateString(undefined, {
+      return this.date.toLocaleDateString("fr-FR", {
         weekday: "long",
         year: "numeric",
         month: "long",
