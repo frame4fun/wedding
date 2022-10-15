@@ -20,7 +20,7 @@
   --color-link: hsla(var(--blue), 1);
   --color-link-hover: hsla(var(--violet), 1);
 
-  --color-title:  hsla(var(--pink), 1);
+  --color-title: hsla(var(--pink), 1);
 
   --background-color: hsla(var(--white), 1);
 
@@ -47,4 +47,13 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: hsla(var(--pink), 1);
+  font-family: Allura, serif;
+  text-align: center;
 }

@@ -4,7 +4,7 @@
 
 <template>
   <div id="place">
-    <p class="title">Le lieu</p>
+    <h2 class="title">Le lieu</h2>
     <div class="content">
       <div class="text-content">
         <p class="subtitle">
@@ -16,15 +16,15 @@
           <div>
             <p class="travel-mode">Voitures :</p>
             <p>
-              Le Chateau des Clos est situé à 30 minutes de Paris, 5 minutes de la sortie A10 Dourdan.
+              Le Chateau des Clos est situé à 30 minutes de Paris, 5 minutes de
+              la sortie A10 Dourdan.
             </p>
             <p>Un parking est présent sur le lieu.</p>
           </div>
           <div>
-            <p class="travel-mode">
-              Transport en commun :</p>
-            <p>Il est possible d'aller en RER B jusqu'à la
-              gare d'Orsay Ville.
+            <p class="travel-mode">Transport en commun :</p>
+            <p>
+              Il est possible d'aller en RER B jusqu'à la gare d'Orsay Ville.
             </p>
             <p>
               Depuis cette gare, le bus 39-07 ramène à 5 minutes du lieu,
@@ -46,14 +46,6 @@
 <style scoped>
 #place {
   height: 100%;
-}
-.title {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: hsla(var(--pink), 1);
-  font-family: Allura, serif;
-  text-align: center;
 }
 .content {
   display: flex;
