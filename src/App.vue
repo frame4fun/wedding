@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import NavBar from "./components/NavBar.vue";
 import SaveTheDate from "./components/SaveTheDate.vue";
+import ThePlace from "./components/ThePlace.vue";
+import SleepPlaces from "./components/SleepPlaces.vue";
 </script>
 
 <template>
-  <!-- <NavBar /> -->
+  <NavBar />
 
   <main>
     <SaveTheDate />
+    <ThePlace />
+    <SleepPlaces />
   </main>
 </template>
 

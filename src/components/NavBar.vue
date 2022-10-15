@@ -30,7 +30,8 @@ export default {
       ></a>
       <ul :class="classOpen">
         <li><a href="#">Accueil</a></li>
-        <li><a href="#">Le Lieu</a></li>
+        <li><a href="#place">Le Lieu</a></li>
+        <li><a href="#sleep">Où dormir ?</a></li>
       </ul>
     </nav>
   </header>
