@@ -30,6 +30,7 @@ export default {
       ></a>
       <ul :class="classOpen"  @click="openCloseMenu">
         <li><a href="#">Accueil</a></li>
+        <li><a href="#program">Le programme</a></li>
         <li><a href="#place">Le Lieu</a></li>
         <li><a href="#sleep">Où dormir ?</a></li>
       </ul>
