@@ -22,13 +22,6 @@ export default defineComponent({
       ],
     };
   },
-  methods: {
-    onSortOptionsChangeEvent(payload: Event) {
-      const target = payload.target as HTMLSelectElement;
-      const newValue = target.value as SortPossiblities;
-      this.sort = newValue;
-    },
-  },
   computed: {
     getSortedOtherPlaces() {
       const sortKey = this.sort;
@@ -51,6 +44,13 @@ export default defineComponent({
       });
     },
   },
+  methods: {
+    onSortOptionsChangeEvent(payload: Event) {
+      const target = payload.target as HTMLSelectElement;
+      const newValue = target.value as SortPossiblities;
+      this.sort = newValue;
+    },
+  },
 });
 </script>
 
@@ -64,8 +64,8 @@ export default defineComponent({
       <select v-model="sort" @change="onSortOptionsChangeEvent">
         <option
           v-for="option in sortedOptions"
-          :value="option.value"
           :key="option.value"
+          :value="option.value"
         >
           {{ option.text }}
         </option>

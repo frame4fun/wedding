@@ -3,7 +3,7 @@
 <script lang="ts">
 export default {
   props: {
-    date: Date,
+    date: { type: Date, required: true },
   },
   data() {
     const now = new Date();
@@ -17,7 +17,7 @@ export default {
 
 <template>
   <div class="countdown">
-    <vue-countdown :time="time" v-slot="{ days }">
+    <vue-countdown v-slot="{ days }" :time="time">
       <div class="column">
         <svg class="heart" viewBox="0 0 32 29.6">
           <path

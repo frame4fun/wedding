@@ -1,16 +1,12 @@
 <script setup lang="ts"></script>
 
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue';
+export default defineComponent({
   data() {
     return {
       isMenuOpen: false,
     };
-  },
-  methods: {
-    openCloseMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    },
   },
   computed: {
     classOpen() {
@@ -19,7 +15,12 @@ export default {
       };
     },
   },
-};
+  methods: {
+    openCloseMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
+});
 </script>
 
 <template>
