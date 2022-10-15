@@ -8,7 +8,7 @@ export default {
     };
   },
   methods: {
-    openMenu() {
+    openCloseMenu() {
       this.isMenuOpen = !this.isMenuOpen;
     },
   },
@@ -25,10 +25,10 @@ export default {
 <template>
   <header>
     <nav>
-      <a href="#" @click="openMenu"
+      <a href="#" @click="openCloseMenu"
         ><span class="burger" :class="classOpen"></span
       ></a>
-      <ul :class="classOpen">
+      <ul :class="classOpen"  @click="openCloseMenu">
         <li><a href="#">Accueil</a></li>
         <li><a href="#place">Le Lieu</a></li>
         <li><a href="#sleep">Où dormir ?</a></li>
