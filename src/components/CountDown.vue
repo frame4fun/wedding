@@ -37,7 +37,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-text);
+  color: hsla(var(--white));
 }
 
 .column {

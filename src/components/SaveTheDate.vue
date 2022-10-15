@@ -84,7 +84,7 @@ export default {
 
 .info {
   font-size: 1.3rem;
-  color: var(--color-text);
+  color: hsla(var(--white));
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

@@ -14,13 +14,15 @@
   --color-border: hsla(var(--blue), 1);
   --color-border-hover: hsla(var(--violet), 1);
 
-  --color-text: hsla(var(--white), 1);
+  --color-text: hsla(var(--black), 1);
   --color-text-hover: hsla(var(--blue), 1);
 
   --color-link: hsla(var(--blue), 1);
   --color-link-hover: hsla(var(--violet), 1);
 
-  --background-color: hsla(var(--pink), 1);
+  --color-title:  hsla(var(--pink), 1);
+
+  --background-color: hsla(var(--white), 1);
 
   --section-gap: 160px;
 }
@@ -37,7 +39,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background: var(--background-color);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;

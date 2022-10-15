@@ -59,7 +59,7 @@ nav {
 .burger {
   width: 30px;
   height: 2px;
-  background: var(--color-text);
+  background: hsla(var(--pink));
   display: inline-block;
   position: relative;
 }
@@ -69,7 +69,7 @@ nav {
   content: "";
   width: 30px;
   height: 2px;
-  background: var(--color-text);
+  background: hsla(var(--pink));
   display: inline-block;
   position: absolute;
   transform-origin: center;
@@ -98,7 +98,7 @@ nav {
 }
 
 ul {
-  background: var(--background-color);
+  background: hsla(var(--pink));
   position: absolute;
   width: 50%;
   right: 0;
@@ -119,7 +119,7 @@ ul li {
 }
 
 ul li a {
-  color: var(--color-text);
+  color:  hsla(var(--white));
   font-size: 1.5rem;
   font-weight: bold;
   display: block;
