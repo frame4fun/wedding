@@ -1,14 +1,40 @@
-<script setup lang="ts"></script>
+<script lang="ts" setup>
 
-<script lang="ts"></script>
+</script>
+
+<script lang="ts">
+import Activity from "./Activity.vue";
+
+export default {
+  components: {
+    Activity
+  },
+  data() {
+    return {
+      activities: [
+        {
+          name: "Cérémonie laïque",
+          time: "L'horaire sera communiquée ultérieurement"
+        },
+        {
+          name: "Réception",
+          time: "L'horaire sera communiquée ultérieurement"
+        },
+        {
+          name: "Brunch",
+          time: "L'horaire sera communiquée ultérieurement"
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <template>
   <div id="program">
     <p class="title">Programme de la journée</p>
     <div class="timeline">
-      <div>Cérémonie laïque</div>
-      <div>Réception</div>
-      <div>Brunch</div>
+      <Activity v-for="activity in activities" :activity="activity"/>
     </div>
   </div>
 </template>
@@ -17,6 +43,7 @@
 #program {
   height: 100%;
 }
+
 .title {
   font-size: 4rem;
   font-weight: bold;
@@ -25,19 +52,13 @@
   font-family: Allura, serif;
   text-align: center;
 }
-.content {
+
+.timeline {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
 }
 
-.text-content {
-  color: var(--color-text);
-  text-align: center;
-  gap: 4rem;
-  display: flex;
-  flex-direction: column;
-}
 </style>
