@@ -13,8 +13,8 @@ TypeScript cannot handle type information for `.vue` imports by default, so we r
 If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
 1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Customize configuration
@@ -52,9 +52,9 @@ npm run lint
 ```
 
 ### Links for inspiration
+
 https://www.wix.com/website-template/view/html/1809
 https://www.wix.com/website-template/view/html/1881
 https://www.wix.com/website-template/view/html/1907
 https://nicepage.com/fr/s/222723/couleurs-de-mariage-dete-modele-css
 https://webypress.fr/16-beaux-modeles-de-sites-web-pour-mariages-html-2019/
-

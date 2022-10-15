@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import NavBar from "./components/NavBar.vue";
-import SaveTheDate from "./components/SaveTheDate.vue";
-import ThePlace from "./components/ThePlace.vue";
-import SleepPlaces from "./components/SleepPlaces.vue";
-import Program from "./components/Program.vue";
+import NavBar from './components/NavBar.vue';
+import SaveTheDate from './components/SaveTheDate.vue';
+import ThePlace from './components/ThePlace.vue';
+import SleepPlaces from './components/SleepPlaces.vue';
+import Program from './components/Program.vue';
 </script>
 
 <template>
@@ -18,7 +18,7 @@ import Program from "./components/Program.vue";
 </template>
 
 <style>
-@import "./assets/base.css";
+@import './assets/base.css';
 
 #app {
   display: flex;

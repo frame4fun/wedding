@@ -28,7 +28,7 @@ export default {
       <a href="#" @click="openCloseMenu"
         ><span class="burger" :class="classOpen"></span
       ></a>
-      <ul :class="classOpen"  @click="openCloseMenu">
+      <ul :class="classOpen" @click="openCloseMenu">
         <li><a href="#">Accueil</a></li>
         <li><a href="#program">Le programme</a></li>
         <li><a href="#place">Le Lieu</a></li>
@@ -67,7 +67,7 @@ nav {
 
 .burger::before,
 .burger::after {
-  content: "";
+  content: '';
   width: 30px;
   height: 2px;
   background: hsla(var(--pink));
@@ -120,7 +120,7 @@ ul li {
 }
 
 ul li a {
-  color:  hsla(var(--white));
+  color: hsla(var(--white));
   font-size: 1.5rem;
   font-weight: bold;
   display: block;

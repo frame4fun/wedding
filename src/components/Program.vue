@@ -22,7 +22,7 @@
   font-weight: bold;
   margin-bottom: 1rem;
   color: hsla(var(--pink), 1);
-  font-family: Allura,serif;
+  font-family: Allura, serif;
   text-align: center;
 }
 .content {

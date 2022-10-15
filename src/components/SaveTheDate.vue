@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CountDown from "./CountDown.vue";
+import CountDown from './CountDown.vue';
 </script>
 
 <script lang="ts">
@@ -11,11 +11,11 @@ export default {
   },
   computed: {
     formattedDate() {
-      return this.date.toLocaleDateString("fr-FR", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
+      return this.date.toLocaleDateString('fr-FR', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
       });
     },
   },
@@ -37,9 +37,9 @@ export default {
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 .background-image {
-  background-image: url("../assets/Guillaume-Alice-mobile.jpeg");
+  background-image: url('../assets/Guillaume-Alice-mobile.jpeg');
   background-size: cover;
   background-position: center bottom;
   height: 100%;
@@ -89,7 +89,7 @@ export default {
 
 @media (min-width: 481px) and (max-width: 768px) {
   .background-image {
-    background-image: url("../assets/Guillaume-Alice-tablet.jpeg");
+    background-image: url('../assets/Guillaume-Alice-tablet.jpeg');
   }
 
   .names {
@@ -107,7 +107,7 @@ export default {
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .background-image {
-    background-image: url("../assets/Guillaume-Alice-desktop.jpeg");
+    background-image: url('../assets/Guillaume-Alice-desktop.jpeg');
   }
 
   .names {
@@ -125,7 +125,7 @@ export default {
 
 @media (min-width: 1201px) {
   .background-image {
-    background-image: url("../assets/Guillaume-Alice-desktop-large.jpeg");
+    background-image: url('../assets/Guillaume-Alice-desktop-large.jpeg');
   }
 
   .names {

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { otherPlaces, type OtherPlace } from "./sleepPlaces";
+import { otherPlaces, type OtherPlace } from './sleepPlaces';
 </script>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 type SortPossiblities = Extract<
   keyof OtherPlace,
-  "Prix indicatif" | "Distance du lieu (en km)"
+  'Prix indicatif' | 'Distance du lieu (en km)'
 >;
 
 export default defineComponent({
@@ -15,10 +15,10 @@ export default defineComponent({
     sortedOptions: Array<{ text: string; value: SortPossiblities }>;
   } {
     return {
-      sort: "Prix indicatif",
+      sort: 'Prix indicatif',
       sortedOptions: [
-        { text: "Prix", value: "Prix indicatif" },
-        { text: "Distance", value: "Distance du lieu (en km)" },
+        { text: 'Prix', value: 'Prix indicatif' },
+        { text: 'Distance', value: 'Distance du lieu (en km)' },
       ],
     };
   },
