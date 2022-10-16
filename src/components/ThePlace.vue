@@ -44,9 +44,6 @@
 </template>
 
 <style scoped>
-#place {
-  height: 100%;
-}
 .content {
   display: flex;
   flex-direction: row;

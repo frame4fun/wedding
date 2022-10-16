@@ -64,9 +64,9 @@ li {
 }
 
 .card {
-  width: 500px;
+  width: 350px;
   height: 400px;
-  margin: 10px auto;
+  margin: 40px;
   background-color: var(--background-color);
   box-shadow: 0px 5px 20px #999;
   border-radius: 5px;

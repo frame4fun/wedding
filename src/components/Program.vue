@@ -1,32 +1,30 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <script lang="ts">
-import Activity from "./Activity.vue";
+import Activity from './Activity.vue';
 
 export default {
   components: {
-    Activity
+    Activity,
   },
   data() {
     return {
       activities: [
         {
-          name: "Cérémonie laïque",
-          time: "L'horaire sera communiquée ultérieurement"
+          name: 'Cérémonie laïque',
+          time: "L'horaire sera communiquée ultérieurement",
         },
         {
-          name: "Réception",
-          time: "L'horaire sera communiquée ultérieurement"
+          name: 'Réception',
+          time: "L'horaire sera communiquée ultérieurement",
         },
         {
-          name: "Brunch",
-          time: "L'horaire sera communiquée ultérieurement"
-        }
-      ]
+          name: 'Brunch',
+          time: "L'horaire sera communiquée ultérieurement",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -34,21 +32,23 @@ export default {
   <div id="program">
     <p class="title">Programme de la journée</p>
     <div class="content">
-      <img id="assis-pyramide" alt="Assis devant la pyramide du Louvres" src="../assets/assis-devant-pyramide.JPG" />
+      <img
+        id="assis-pyramide"
+        alt="Assis devant la pyramide du Louvres"
+        src="../assets/assis-devant-pyramide.JPG"
+      />
       <div class="timeline">
-        <Activity v-for="(activity, index) in activities" :key="index" :activity="activity" />
+        <Activity
+          v-for="(activity, index) in activities"
+          :key="index"
+          :activity="activity"
+        />
       </div>
-
     </div>
-
   </div>
 </template>
 
 <style scoped>
-#program {
-  height: 100%;
-}
-
 #assis-pyramide {
   height: 50rem;
 }
@@ -74,5 +74,4 @@ export default {
   align-items: center;
   padding: 1rem 1rem;
 }
-
 </style>

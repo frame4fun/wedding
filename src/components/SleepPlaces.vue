@@ -60,17 +60,24 @@ export default defineComponent({
     <div>
       <h2>Les hébergements du château</h2>
     </div>
-    <div>
+    <div class="other-places">
       <h2>Les hébergements autour du château</h2>
-      <select v-model="sort" @change="onSortOptionsChangeEvent">
-        <option
-          v-for="option in sortedOptions"
-          :key="option.value"
-          :value="option.value"
+      <div class="place-select">
+        <label for="place-options-select">Filtrer par :</label>
+        <select
+          id="place-options-select"
+          v-model="sort"
+          @change="onSortOptionsChangeEvent"
         >
-          {{ option.text }}
-        </option>
-      </select>
+          <option
+            v-for="option in sortedOptions"
+            :key="option.value"
+            :value="option.value"
+          >
+            {{ option.text }}
+          </option>
+        </select>
+      </div>
       <ul class="card-items">
         <CardItem
           v-for="otherPlace in getSortedOtherPlaces"
@@ -91,10 +98,23 @@ export default defineComponent({
 </template>
 
 <style scoped>
+.other-places {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-select > * {
+  margin: 0 10px;
+}
+
 .card-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
 }
 </style>
