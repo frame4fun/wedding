@@ -26,6 +26,8 @@ export default defineComponent({
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .content {
@@ -33,6 +35,8 @@ export default defineComponent({
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0 1rem;
+  width: 100%;
 }
 </style>

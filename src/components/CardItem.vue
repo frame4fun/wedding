@@ -66,7 +66,7 @@ li {
 .card {
   width: 350px;
   height: 400px;
-  margin: 40px;
+  margin: 20px 0;
   background-color: var(--background-color);
   box-shadow: 0px 5px 20px #999;
   border-radius: 5px;
@@ -180,6 +180,12 @@ li {
   .card:hover {
     background-color: hsla(var(--pink));
     transition: 0.5s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    margin: 40px;
   }
 }
 </style>

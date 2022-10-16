@@ -46,5 +46,12 @@ export default defineComponent({
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    flex-wrap: nowrap;
+  }
 }
 </style>
