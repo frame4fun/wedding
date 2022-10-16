@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CustomSection from './CustomSection.vue';
+import BaseSection from './BaseSection.vue';
 import CardItem from './CardItem.vue';
 import { otherPlaces, type OtherPlace } from './otherPlaces';
 </script>
@@ -57,7 +57,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <CustomSection id="other-places" title="Les hébergements autour du château">
+  <BaseSection id="other-places" title="Les hébergements autour du château">
     <div class="place-select">
       <label for="place-options-select">Filtrer par :</label>
       <select
@@ -89,7 +89,7 @@ export default defineComponent({
         :description="otherPlace['Info complémentaires']"
       />
     </ul>
-  </CustomSection>
+  </BaseSection>
 </template>
 
 <style scoped>

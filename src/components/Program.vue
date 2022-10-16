@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import CustomSection from './CustomSection.vue';
+import ImageSection from './ImageSection.vue';
+import imagePyramide from '../assets/assis-devant-pyramide.jpeg';
 </script>
 
 <script lang="ts">
@@ -31,34 +32,23 @@ export default {
 </script>
 
 <template>
-  <CustomSection id="program" title="Programme de la journée">
-    <div class="content">
-      <img
-        id="assis-pyramide"
-        alt="Assis devant la pyramide du Louvres"
-        src="../assets/assis-devant-pyramide.JPG"
+  <ImageSection
+    id="program"
+    title="Programme de la journée"
+    image-alt="Assis devant la pyramide du Louvres"
+    :image-src="imagePyramide"
+  >
+    <div class="timeline">
+      <Activity
+        v-for="(activity, index) in activities"
+        :key="index"
+        :activity="activity"
       />
-      <div class="timeline">
-        <Activity
-          v-for="(activity, index) in activities"
-          :key="index"
-          :activity="activity"
-        />
-      </div>
     </div>
-  </CustomSection>
+  </ImageSection>
 </template>
 
 <style scoped>
-#assis-pyramide {
-  height: 50rem;
-}
-
-.content {
-  display: flex;
-  flex-direction: row;
-}
-
 .timeline {
   display: flex;
   flex-direction: row;

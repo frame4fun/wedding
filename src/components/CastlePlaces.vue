@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CustomSection from './CustomSection.vue';
+import BaseSection from './BaseSection.vue';
 </script>
 
 <script lang="ts">
@@ -9,8 +9,8 @@ export default defineComponent({});
 </script>
 
 <template>
-  <CustomSection id="castle-places" title="Les hébergements du château">
-  </CustomSection>
+  <BaseSection id="castle-places" title="Les hébergements du château">
+  </BaseSection>
 </template>
 
 <style scoped></style>
