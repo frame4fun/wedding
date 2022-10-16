@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CardItem from './CardItem.vue';
 import { otherPlaces, type OtherPlace } from './sleepPlaces';
 </script>
 
@@ -28,10 +29,10 @@ export default defineComponent({
       return otherPlaces.sort((a, b) => {
         const aValue = a[sortKey];
         const bValue = b[sortKey];
-        if (aValue === null) {
+        if (aValue === undefined) {
           return 1;
         }
-        if (bValue === null) {
+        if (bValue === undefined) {
           return -1;
         }
         if (aValue > bValue) {
@@ -70,13 +71,30 @@ export default defineComponent({
           {{ option.text }}
         </option>
       </select>
-      <ul>
-        <li v-for="otherPlace in getSortedOtherPlaces" :key="otherPlace.Nom">
-          {{ otherPlace.Nom }}
-        </li>
+      <ul class="card-items">
+        <CardItem
+          v-for="otherPlace in getSortedOtherPlaces"
+          :key="otherPlace.Nom"
+          :name="otherPlace.Nom"
+          :website="otherPlace['Site internet']"
+          :address="otherPlace['Adresse']"
+          :address-link="otherPlace['Plan']"
+          :time="otherPlace['Temps en voiture du lieu (en minutes)']"
+          :distance="otherPlace['Distance du lieu (en km)']"
+          :price="otherPlace['Prix indicatif']"
+          :phone-number="otherPlace['Numéro téléphone']"
+          :description="otherPlace['Info complémentaires']"
+        />
       </ul>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.card-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+</style>

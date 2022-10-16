@@ -57,3 +57,12 @@ h2 {
   font-family: Allura, serif;
   text-align: center;
 }
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: hsla(var(--orange), 1);
+  font-family: Allura, serif;
+  text-align: center;
+}

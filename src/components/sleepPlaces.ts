@@ -1,19 +1,19 @@
 export interface OtherPlace {
   Nom: string;
-  'Numéro téléphone': number | null;
+  'Numéro téléphone'?: string;
   Adresse: string;
   'Distance du lieu (en km)': number;
   'Temps en voiture du lieu (en minutes)': number;
   Plan: string;
   'Site internet': string;
   'Info complémentaires': string;
-  'Prix indicatif': number | null;
+  'Prix indicatif'?: number;
 }
 
 export const otherPlaces: OtherPlace[] = [
   {
     Nom: 'La Foulerie',
-    'Numéro téléphone': 617829904,
+    'Numéro téléphone': '0617829904',
     Adresse: '57 Chem. de la Foulerie, 78830 Bullion',
     'Distance du lieu (en km)': 5,
     'Temps en voiture du lieu (en minutes)': 8,
@@ -24,7 +24,7 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: 'Le Barn',
-    'Numéro téléphone': 186380000,
+    'Numéro téléphone': '0186380000',
     Adresse: 'Le Moulin de Brétigny, 78830 Bonnelles',
     'Distance du lieu (en km)': 2.9,
     'Temps en voiture du lieu (en minutes)': 5,
@@ -35,7 +35,7 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: 'La Villa Rochette',
-    'Numéro téléphone': 984141656,
+    'Numéro téléphone': '0984141656',
     Adresse: "La Villa Rochette, 13 Rue d'Adelaiau, 91470 Forges-les-Bains",
     'Distance du lieu (en km)': 8.8,
     'Temps en voiture du lieu (en minutes)': 12,
@@ -46,18 +46,17 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: "Ferme d'Armenon",
-    'Numéro téléphone': 164910045,
+    'Numéro téléphone': '0164910045',
     Adresse: '91470 Les Molières',
     'Distance du lieu (en km)': 9.6,
     'Temps en voiture du lieu (en minutes)': 13,
     Plan: "https://www.google.com/maps/place/Ferme+d'Armenon/@48.6679548,2.0844474,17z/data=!3m1!4b1!4m8!3m7!1s0x47e5d52da44cff5f:0x27747548ab2d86d7!5m2!4m1!1i2!8m2!3d48.6679548!4d2.0866361?hl=fr-FR",
     'Site internet': 'http://www.lafermedarmenon.com/',
     'Info complémentaires': 'Parking gratuit, calme',
-    'Prix indicatif': null,
   },
   {
     Nom: "L'Hibernie",
-    'Numéro téléphone': 130595571,
+    'Numéro téléphone': '0130595571',
     Adresse: '7 Rue de la Pie, 78730 Rochefort-en-Yvelines',
     'Distance du lieu (en km)': 6.2,
     'Temps en voiture du lieu (en minutes)': 8,
@@ -68,7 +67,7 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: 'Nid de Rochefort',
-    'Numéro téléphone': 178970282,
+    'Numéro téléphone': '0178970282',
     Adresse: '15 Chem. sous la ville, 78730 Rochefort-en-Yvelines',
     'Distance du lieu (en km)': 5.3,
     'Temps en voiture du lieu (en minutes)': 7,
@@ -80,7 +79,7 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: 'Aux Hôtes de Guy le Rouge',
-    'Numéro téléphone': 130419072,
+    'Numéro téléphone': '0130419072',
     Adresse: '73 Rue Guy le Rouge, 78730 Rochefort-en-Yvelines',
     'Distance du lieu (en km)': 6,
     'Temps en voiture du lieu (en minutes)': 7,
@@ -88,11 +87,10 @@ export const otherPlaces: OtherPlace[] = [
     'Site internet': 'http://www.auxhotesdeguylerouge.com/',
     'Info complémentaires':
       'Pas vu grand chose de l’extérieur. Mais facilement accessible',
-    'Prix indicatif': null,
   },
   {
     Nom: "Chambre d'Hôtes du Château",
-    'Numéro téléphone': 678071328,
+    'Numéro téléphone': '0678071328',
     Adresse: '38 Rue de Chartres, 91410 Dourdan',
     'Distance du lieu (en km)': 13.7,
     'Temps en voiture du lieu (en minutes)': 16,
@@ -103,8 +101,8 @@ export const otherPlaces: OtherPlace[] = [
     'Prix indicatif': 75,
   },
   {
-    Nom: 'HOTEL BEST WESTERN BLANCHE DE CASTILLE',
-    'Numéro téléphone': 160811910,
+    Nom: 'Hotel Blanche de Castille',
+    'Numéro téléphone': '0160811910',
     Adresse: '7 Rue Demetz, 91410 Dourdan',
     'Distance du lieu (en km)': 13.8,
     'Temps en voiture du lieu (en minutes)': 17,
@@ -116,7 +114,7 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: "Le Logis d'Arnière",
-    'Numéro téléphone': 683561563,
+    'Numéro téléphone': '0683561563',
     Adresse: '1 Rue du Pont Rue, 91410 Saint-Cyr-sous-Dourdan',
     'Distance du lieu (en km)': 9,
     'Temps en voiture du lieu (en minutes)': 11,
@@ -128,7 +126,7 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: 'Le Moulin Bleu',
-    'Numéro téléphone': 670318243,
+    'Numéro téléphone': '0670318243',
     Adresse: '87 Rue du Pont Rue, 91410 Saint-Cyr-sous-Dourdan',
     'Distance du lieu (en km)': 9.5,
     'Temps en voiture du lieu (en minutes)': 14,
@@ -141,7 +139,7 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: 'Camping de la bruyère',
-    'Numéro téléphone': 164589272,
+    'Numéro téléphone': '0164589272',
     Adresse: 'Rte des Bruyères, 91530 Le Val-Saint-Germain',
     'Distance du lieu (en km)': 8.7,
     'Temps en voiture du lieu (en minutes)': 12,
@@ -150,11 +148,10 @@ export const otherPlaces: OtherPlace[] = [
       'https://www.campingfrance.com/recherchez-votre-camping/ile-de-france/essonne/le-val-saint-germain/camping-des-bruyeres',
     'Info complémentaires':
       'Camping 1 étoile, Accessible, grand, cul de sac. Bungalow + possibilité de planter tente ',
-    'Prix indicatif': null,
   },
   {
     Nom: 'Ibis budget Rambouillet',
-    'Numéro téléphone': 892683184,
+    'Numéro téléphone': '0892683184',
     Adresse: 'Za Du Bel Air, Rue Joseph Jacquard, 78120 Rambouillet',
     'Distance du lieu (en km)': 21.3,
     'Temps en voiture du lieu (en minutes)': 25,
@@ -165,8 +162,8 @@ export const otherPlaces: OtherPlace[] = [
     'Prix indicatif': 53,
   },
   {
-    Nom: 'Ibi Rambouillets',
-    'Numéro téléphone': 130417850,
+    Nom: 'Ibis Rambouillets',
+    'Numéro téléphone': '0130417850',
     Adresse:
       'Gps = Rn, 2 Rue Pierre Métairie, 10 ZA du Bel Air, 78120 Rambouillet',
     'Distance du lieu (en km)': 20.9,
@@ -179,7 +176,6 @@ export const otherPlaces: OtherPlace[] = [
   },
   {
     Nom: 'Studio écurie château ',
-    'Numéro téléphone': null,
     Adresse: '3 allée de la duchesse Bonnelles',
     'Distance du lieu (en km)': 3,
     'Temps en voiture du lieu (en minutes)': 5,
