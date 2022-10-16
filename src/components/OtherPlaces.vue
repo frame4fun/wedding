@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import CustomSection from './CustomSection.vue';
 import CardItem from './CardItem.vue';
-import { otherPlaces, type OtherPlace } from './sleepPlaces';
+import { otherPlaces, type OtherPlace } from './otherPlaces';
 </script>
 
 <script lang="ts">
@@ -56,55 +57,42 @@ export default defineComponent({
 </script>
 
 <template>
-  <div id="sleep">
-    <div>
-      <h2>Les hébergements du château</h2>
-    </div>
-    <div class="other-places">
-      <h2>Les hébergements autour du château</h2>
-      <div class="place-select">
-        <label for="place-options-select">Filtrer par :</label>
-        <select
-          id="place-options-select"
-          v-model="sort"
-          @change="onSortOptionsChangeEvent"
+  <CustomSection id="other-places" title="Les hébergements autour du château">
+    <div class="place-select">
+      <label for="place-options-select">Filtrer par :</label>
+      <select
+        id="place-options-select"
+        v-model="sort"
+        @change="onSortOptionsChangeEvent"
+      >
+        <option
+          v-for="option in sortedOptions"
+          :key="option.value"
+          :value="option.value"
         >
-          <option
-            v-for="option in sortedOptions"
-            :key="option.value"
-            :value="option.value"
-          >
-            {{ option.text }}
-          </option>
-        </select>
-      </div>
-      <ul class="card-items">
-        <CardItem
-          v-for="otherPlace in getSortedOtherPlaces"
-          :key="otherPlace.Nom"
-          :name="otherPlace.Nom"
-          :website="otherPlace['Site internet']"
-          :address="otherPlace['Adresse']"
-          :address-link="otherPlace['Plan']"
-          :time="otherPlace['Temps en voiture du lieu (en minutes)']"
-          :distance="otherPlace['Distance du lieu (en km)']"
-          :price="otherPlace['Prix indicatif']"
-          :phone-number="otherPlace['Numéro téléphone']"
-          :description="otherPlace['Info complémentaires']"
-        />
-      </ul>
+          {{ option.text }}
+        </option>
+      </select>
     </div>
-  </div>
+    <ul class="card-items">
+      <CardItem
+        v-for="otherPlace in getSortedOtherPlaces"
+        :key="otherPlace.Nom"
+        :name="otherPlace.Nom"
+        :website="otherPlace['Site internet']"
+        :address="otherPlace['Adresse']"
+        :address-link="otherPlace['Plan']"
+        :time="otherPlace['Temps en voiture du lieu (en minutes)']"
+        :distance="otherPlace['Distance du lieu (en km)']"
+        :price="otherPlace['Prix indicatif']"
+        :phone-number="otherPlace['Numéro téléphone']"
+        :description="otherPlace['Info complémentaires']"
+      />
+    </ul>
+  </CustomSection>
 </template>
 
 <style scoped>
-.other-places {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .place-select > * {
   margin: 0 10px;
 }

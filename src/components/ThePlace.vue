@@ -1,10 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CustomSection from './CustomSection.vue';
+</script>
 
 <script lang="ts"></script>
 
 <template>
-  <div id="place">
-    <h2 class="title">Le lieu</h2>
+  <CustomSection id="place" title="Le lieu">
     <div class="content">
       <div class="text-content">
         <p class="subtitle">
@@ -40,7 +41,7 @@
       </div>
       <img src="../assets/lieu.jpg" alt="the place" />
     </div>
-  </div>
+  </CustomSection>
 </template>
 
 <style scoped>

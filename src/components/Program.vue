@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import CustomSection from './CustomSection.vue';
+</script>
 
 <script lang="ts">
 import Activity from './Activity.vue';
@@ -29,8 +31,7 @@ export default {
 </script>
 
 <template>
-  <div id="program">
-    <p class="title">Programme de la journée</p>
+  <CustomSection id="program" title="Programme de la journée">
     <div class="content">
       <img
         id="assis-pyramide"
@@ -45,21 +46,12 @@ export default {
         />
       </div>
     </div>
-  </div>
+  </CustomSection>
 </template>
 
 <style scoped>
 #assis-pyramide {
   height: 50rem;
-}
-
-.title {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: hsla(var(--pink), 1);
-  font-family: Allura, serif;
-  text-align: center;
 }
 
 .content {

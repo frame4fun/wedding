@@ -2,7 +2,8 @@
 import NavBar from './components/NavBar.vue';
 import SaveTheDate from './components/SaveTheDate.vue';
 import ThePlace from './components/ThePlace.vue';
-import SleepPlaces from './components/SleepPlaces.vue';
+import CastlePlaces from './components/CastlePlaces.vue';
+import OtherPlaces from './components/OtherPlaces.vue';
 import Program from './components/Program.vue';
 </script>
 
@@ -13,7 +14,8 @@ import Program from './components/Program.vue';
     <SaveTheDate />
     <Program />
     <ThePlace />
-    <SleepPlaces />
+    <CastlePlaces />
+    <OtherPlaces />
   </main>
 </template>
 
