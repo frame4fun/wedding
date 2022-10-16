@@ -11,7 +11,7 @@ export default defineComponent({
     website: { type: String, required: true },
     time: { type: Number, required: true },
     distance: { type: Number, required: true },
-    price: { type: Number, required: false },
+    price: { type: Number, required: false, default: 0 },
     phoneNumber: { type: String, required: false, default: 'Non communiqué' },
     description: { type: String, required: true },
   },
@@ -26,9 +26,9 @@ export default defineComponent({
     <div class="card-body">
       <div class="card-important">
         <div class="card-price tooltip" data-text="Prix indicatif">
-          <FontAwesomeIcon icon="fa-solid fa-euro-sign" />
-          <span v-if="price">{{ price }}</span>
+          <span v-if="price > 0">{{ price }}</span>
           <span v-else>Non communiqué</span>
+          <FontAwesomeIcon icon="fa-solid fa-euro-sign" />
         </div>
         <div class="card-time tooltip" :data-text="`A ${distance} km`">
           <FontAwesomeIcon icon="fa-solid fa-clock" />
@@ -111,9 +111,14 @@ li {
 .card-price,
 .card-time {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.card-price > *:not(:first-child),
+.card-time > *:not(:first-child) {
+  margin-left: 5px;
 }
 
 .tooltip:before {
