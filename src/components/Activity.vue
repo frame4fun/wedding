@@ -9,8 +9,8 @@ export class Activity {
 
 export default {
   props: {
-    activity: Activity,
-  },
+    activity: Activity
+  }
 };
 </script>
 
@@ -26,6 +26,5 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 </style>

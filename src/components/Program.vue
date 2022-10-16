@@ -25,23 +25,32 @@ export default {
           time: "L'horaire sera communiquée ultérieurement"
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <template>
   <div id="program">
     <p class="title">Programme de la journée</p>
-    <div class="timeline">
-      <Activity v-for="activity in activities" :activity="activity"/>
+    <div class="content">
+      <img id="assis-pyramide" alt="Assis devant la pyramide du Louvres" src="../assets/assis-devant-pyramide.JPG" />
+      <div class="timeline">
+        <Activity v-for="(activity, index) in activities" :key="index" :activity="activity" />
+      </div>
+
     </div>
+
   </div>
 </template>
 
 <style scoped>
 #program {
   height: 100%;
+}
+
+#assis-pyramide {
+  height: 50rem;
 }
 
 .title {
@@ -51,6 +60,11 @@ export default {
   color: hsla(var(--pink), 1);
   font-family: Allura, serif;
   text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
 }
 
 .timeline {
