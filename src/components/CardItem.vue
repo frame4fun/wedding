@@ -26,8 +26,8 @@ export default defineComponent({
     <div class="card-body">
       <div class="card-important">
         <div class="card-price tooltip" data-text="Prix indicatif">
-          <FontAwesomeIcon icon="fa-solid fa-money-bill-1" />
-          <span v-if="price">{{ price }} €</span>
+          <FontAwesomeIcon icon="fa-solid fa-euro-sign" />
+          <span v-if="price">{{ price }}</span>
           <span v-else>Non communiqué</span>
         </div>
         <div class="card-time tooltip" :data-text="`A ${distance} km`">

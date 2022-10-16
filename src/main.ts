@@ -8,11 +8,11 @@ import {
   faLocationDot,
   faDesktop,
   faClock,
-  faMoneyBill1,
+  faEuroSign,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faLocationDot, faDesktop, faClock, faMoneyBill1, faPhone);
+library.add(faLocationDot, faDesktop, faClock, faEuroSign, faPhone);
 
 const app = createApp(App);
 
