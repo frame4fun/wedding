@@ -21,7 +21,7 @@ export default defineComponent({
 <template>
   <li class="card">
     <div class="card-title">
-      <h3>{{ name }}</h3>
+      <h4>{{ name }}</h4>
     </div>
     <div class="card-body">
       <div class="card-important">

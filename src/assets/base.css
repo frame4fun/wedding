@@ -49,20 +49,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h2 {
-  font-size: 4rem;
+h2,
+h3,
+h4 {
   font-weight: bold;
   margin-bottom: 1rem;
-  color: hsla(var(--pink), 1);
   font-family: Allura, serif;
   text-align: center;
 }
 
+h2 {
+  font-size: 4rem;
+  color: hsla(var(--pink), 1);
+}
+
 h3 {
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
   color: hsla(var(--orange), 1);
-  font-family: Allura, serif;
-  text-align: center;
+}
+
+h4 {
+  font-size: 2rem;
+  color: hsla(var(--violet), 1);
 }

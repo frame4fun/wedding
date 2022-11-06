@@ -59,7 +59,7 @@ export default defineComponent({
 <template>
   <BaseSection id="other-places" title="Les hébergements autour du château">
     <div class="place-select">
-      <label for="place-options-select">Filtrer par :</label>
+      <label for="place-options-select">Trier par :</label>
       <select
         id="place-options-select"
         v-model="sort"

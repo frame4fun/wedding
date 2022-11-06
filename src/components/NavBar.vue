@@ -33,7 +33,7 @@ export default defineComponent({
         <li><a href="#">Accueil</a></li>
         <li><a href="#program">Le programme</a></li>
         <li><a href="#place">Le Lieu</a></li>
-        <li><a href="#castle-places">Les hébergements du château</a></li>
+        <li><a href="#castle-rooms">Les hébergements du château</a></li>
         <li><a href="#other-places">Les hébergements autour du château</a></li>
       </ul>
     </nav>
