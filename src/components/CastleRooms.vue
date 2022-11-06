@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import BaseSection from './BaseSection.vue';
-import CardItem2 from './CardItem2.vue';
+import CardList from './cards/CardList.vue';
+import CastleRoom from './CastleRoom.vue';
 import { castleCategories } from './castleRooms';
 </script>
 
@@ -12,11 +13,21 @@ export default defineComponent({});
 
 <template>
   <BaseSection id="castle-rooms" title="Les hébergements du château">
-    <div v-for="castleCategory in castleCategories" :key="castleCategory.title">
+    <p class="description">
+      Toutes les chambres possèdent une salle de bain privative et sont équipées
+      de serviettes, tapis de bain, produits d'accueil (gel douche, savon,
+      bonnet de douche), sèche-cheveux. Jusqu'à 60 personnes peuvent être
+      hébergés sur place.
+    </p>
+    <div
+      v-for="castleCategory in castleCategories"
+      :key="castleCategory.title"
+      class="category"
+    >
       <h3>{{ castleCategory.title }}</h3>
-      <div>{{ castleCategory.description }}</div>
-      <ul class="card-items">
-        <CardItem2
+      <p class="description">{{ castleCategory.description }}</p>
+      <CardList>
+        <CastleRoom
           v-for="castleRoom in castleCategory.rooms"
           :key="castleRoom.Nom"
           :name="castleRoom.Nom"
@@ -24,19 +35,18 @@ export default defineComponent({});
           :description="castleRoom.Info"
           :image="castleRoom.Image"
         />
-      </ul>
-      <div>{{ castleCategory.plan }}</div>
+      </CardList>
     </div>
   </BaseSection>
 </template>
 
 <style scoped>
-.card-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 0;
+.description {
+  text-align: center;
+  margin: 1rem 2rem;
+}
+
+.category {
+  margin-top: 2rem;
 }
 </style>

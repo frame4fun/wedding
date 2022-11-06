@@ -17,43 +17,42 @@ export interface CastleRoom {
 
 export interface CastleCategory {
   title: string;
-  description: string;
+  description?: string;
   rooms: CastleRoom[];
-  plan?: string;
 }
 
 export const castleCategories: CastleCategory[] = [
   {
     title: 'Les chambres du château',
-    description: 'ffgjfgnfj',
+    description: '6 chambres très spacieuses au 1er étage du Château',
     rooms: [
       {
         Nom: 'Chambre Chambertin',
-        Info: 'Au 1er étage du château, chambre spacieuse avec vue sur le parc et la forêt.',
+        Info: 'Chambre spacieuse avec vue sur le parc et la forêt.',
         Prix: 245,
         Image: Chambertin,
       },
       {
         Nom: 'Chambre Richebourg',
-        Info: 'Au 1er étage du château, chambre double avec vue sur le Jardin à la française',
+        Info: 'Cchambre double avec vue sur le Jardin à la française',
         Prix: 245,
         Image: Richebourg,
       },
       {
         Nom: 'Chambre des Clos',
-        Info: 'Au 1er étage du château, chambre qui peut également convenir pour les personnes à mobilité réduite.',
+        Info: 'Chambre qui peut également convenir pour les personnes à mobilité réduite.',
         Prix: 200,
         Image: LesClos,
       },
       {
         Nom: 'Chambre Montrachet',
-        Info: 'Au 1er étage du château, chambre double avec vue sur le jardin à la française.',
+        Info: 'Chambre double avec vue sur le jardin à la française.',
         Prix: 245,
         Image: Montrachet,
       },
       {
         Nom: 'Chambre Présidentielle',
-        Info: 'Au 1er étage du château, chambre spacieuse avec vue panoramique sur tout le parc.',
+        Info: 'Chambre spacieuse avec vue panoramique sur tout le parc.',
         Prix: 295,
         Image: Presidentielle,
       },
@@ -61,17 +60,17 @@ export const castleCategories: CastleCategory[] = [
   },
   {
     title: 'Les chambres de la dépendance',
-    description: 'ffgjfgnfj',
+    description: '16 chambres doubles de 14m2 et 1 chambre quadruple de 20m2',
     rooms: [
       {
         Nom: 'Chambre double',
-        Info: "Dependance du chateau, 16 chambres doubles de 14m2, certaines avec 2 lits simples, d'autres avec 2 lits doubles. Salle de bain privative. Possibilité d'ajouter un lit simple dans certaines chambres pour 30 euros.",
+        Info: "Certaines possèdent 2 lits simples, d'autres un lit doubles.",
         Prix: 100,
         Image: Double,
       },
       {
         Nom: 'Chambre quadruple',
-        Info: 'Dependance du chateau, 1 chambre quadruple de 20m2, 2 lits simples et 1 lit double. Salle de bain privative',
+        Info: '2 lits simples et 1 lit double',
         Prix: 170,
         Image: Quadruple,
       },
@@ -79,17 +78,16 @@ export const castleCategories: CastleCategory[] = [
   },
   {
     title: 'Les chambres du hameau',
-    description: 'ffgjfgnfj',
     rooms: [
       {
         Nom: 'Les Glycines',
-        Info: 'Hameau du chateau, 4 personnes, 2 lits doubles, 19m2',
+        Info: '4 personnes, 2 lits doubles, 19m2',
         Prix: 170,
         Image: Glycines,
       },
       {
         Nom: 'Les Nénuphars',
-        Info: 'Hameau du chateau, 3 personnes, 1 lit double et 1 lit simple, 15m2',
+        Info: '3 personnes, 1 lit double et 1 lit simple, 15m2',
         Prix: 130,
         Image: Nenuphars,
       },

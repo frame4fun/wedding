@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import BaseSection from './BaseSection.vue';
-import CardItem from './CardItem.vue';
+import CardList from './cards/CardList.vue';
+import OtherPlaceComp from './OtherPlace.vue';
 import { otherPlaces, type OtherPlace } from './otherPlaces';
 </script>
 
@@ -74,8 +75,8 @@ export default defineComponent({
         </option>
       </select>
     </div>
-    <ul class="card-items">
-      <CardItem
+    <CardList>
+      <OtherPlaceComp
         v-for="otherPlace in getSortedOtherPlaces"
         :key="otherPlace.Nom"
         :name="otherPlace.Nom"
@@ -88,21 +89,12 @@ export default defineComponent({
         :phone-number="otherPlace['Numéro téléphone']"
         :description="otherPlace['Info complémentaires']"
       />
-    </ul>
+    </CardList>
   </BaseSection>
 </template>
 
 <style scoped>
 .place-select > * {
   margin: 0 10px;
-}
-
-.card-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 0;
 }
 </style>
