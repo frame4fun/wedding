@@ -56,6 +56,12 @@ export default {
   align-items: center;
   padding: 1rem 1rem;
   flex-wrap: wrap;
-  gap: 6rem;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .timeline {
+    gap: 6rem;
+  }
 }
 </style>
