@@ -1,8 +1,9 @@
 <script lang="ts" setup>
-import BaseSection from "./BaseSection.vue";</script>
+import BaseSection from './BaseSection.vue';
+</script>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   props: {
@@ -10,8 +11,8 @@ export default defineComponent({
     title: { type: String, required: true },
     imageIsLeft: { type: Boolean, required: false, default: true },
     imageAlt: { type: String, required: true },
-    imageSrc: { type: String, required: true }
-  }
+    imageSrc: { type: String, required: true },
+  },
 });
 </script>
 
@@ -43,9 +44,10 @@ export default defineComponent({
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {

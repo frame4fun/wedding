@@ -1,32 +1,33 @@
 <script lang="ts" setup>
-import ImageSection from "./ImageSection.vue";
-import imagePyramide from "../assets/assis-devant-pyramide.jpeg";</script>
+import ImageSection from './ImageSection.vue';
+import imagePyramide from '../assets/assis-devant-pyramide.jpeg';
+</script>
 
 <script lang="ts">
-import Activity from "./Activity.vue";
+import Activity from './Activity.vue';
 
 export default {
   components: {
-    Activity
+    Activity,
   },
   data() {
     return {
       activities: [
         {
-          name: "Cérémonie laïque",
-          time: "17h00"
+          name: 'Cérémonie laïque',
+          time: '17h00',
         },
         {
-          name: "Réception",
-          time: "18h30"
+          name: 'Réception',
+          time: '18h30',
         },
         {
-          name: "Brunch",
-          time: "Le lendemain midi"
-        }
-      ]
+          name: 'Brunch',
+          time: 'Le lendemain midi',
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -56,6 +57,5 @@ export default {
   padding: 1rem 1rem;
   flex-wrap: wrap;
   gap: 6rem;
-  padding: 6rem;
 }
 </style>
