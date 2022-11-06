@@ -1,42 +1,41 @@
 <script lang="ts" setup>
-import ImageSection from './ImageSection.vue';
-import imagePyramide from '../assets/assis-devant-pyramide.jpeg';
-</script>
+import ImageSection from "./ImageSection.vue";
+import imagePyramide from "../assets/assis-devant-pyramide.jpeg";</script>
 
 <script lang="ts">
-import Activity from './Activity.vue';
+import Activity from "./Activity.vue";
 
 export default {
   components: {
-    Activity,
+    Activity
   },
   data() {
     return {
       activities: [
         {
-          name: 'Cérémonie laïque',
-          time: "L'horaire sera communiquée ultérieurement",
+          name: "Cérémonie laïque",
+          time: "17h00"
         },
         {
-          name: 'Réception',
-          time: "L'horaire sera communiquée ultérieurement",
+          name: "Réception",
+          time: "18h30"
         },
         {
-          name: 'Brunch',
-          time: "L'horaire sera communiquée ultérieurement",
-        },
-      ],
+          name: "Brunch",
+          time: "Le lendemain midi"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
 <template>
   <ImageSection
     id="program"
-    title="Programme de la journée"
-    image-alt="Assis devant la pyramide du Louvres"
     :image-src="imagePyramide"
+    image-alt="Assis devant la pyramide du Louvres"
+    title="Programme de la journée"
   >
     <div class="timeline">
       <Activity
@@ -56,5 +55,7 @@ export default {
   align-items: center;
   padding: 1rem 1rem;
   flex-wrap: wrap;
+  gap: 6rem;
+  padding: 6rem;
 }
 </style>

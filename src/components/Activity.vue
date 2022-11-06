@@ -16,8 +16,8 @@ export default {
 
 <template>
   <div class="event">
-    <p>{{ activity.name }}</p>
-    <p>{{ activity.time }}</p>
+    <h3>{{ activity.name }}</h3>
+    <h4>{{ activity.time }}</h4>
   </div>
 </template>
 
@@ -25,6 +25,10 @@ export default {
 .event {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  border: 20px solid;
+  border-image: url('../assets/showcard-border.svg') 20 20 repeat;
 }
 </style>
