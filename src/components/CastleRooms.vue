@@ -15,10 +15,13 @@ export default defineComponent({});
   <BaseSection id="castle-rooms" title="Les hébergements du château">
     <div class="description-container">
       <p class="description">
-        Toutes les chambres possèdent une salle de bain privative et sont
-        équipées de serviettes, tapis de bain, produits d'accueil (gel douche,
-        savon, bonnet de douche), sèche-cheveux. Jusqu'à 60 personnes peuvent
-        être hébergés sur place.
+        Toutes les chambres du château possèdent une salle de bain privative et
+        sont équipées de serviettes, tapis de bain, produits d'accueil (gel
+        douche, savon, bonnet de douche), sèche-cheveux. Jusqu'à 60 personnes
+        peuvent être hébergés sur place.
+      </p>
+      <p class="description">
+        Contacter l'un de nous pour réserver une de ces chambres.
       </p>
     </div>
     <div
