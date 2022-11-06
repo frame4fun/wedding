@@ -46,7 +46,7 @@ header {
   max-height: 100vh;
   position: fixed;
   z-index: 1;
-  width: 100%;
+  right: 0;
 }
 
 nav {
@@ -103,14 +103,14 @@ nav {
 ul {
   background: hsla(var(--pink));
   position: absolute;
-  width: 50%;
   right: 0;
   top: 100%;
-  padding: 10px 0;
   transform: scaleX(0);
   transform-origin: right center;
   transition: all 0.3s ease;
   list-style-type: none;
+  padding: 0;
+  min-width: 350px;
 }
 ul.open {
   transform: scaleX(1);
@@ -129,12 +129,6 @@ ul li a {
   padding: 10px 0;
   text-align: center;
   text-decoration: none;
-}
-
-@media (min-width: 1024px) {
-  ul {
-    width: 20%;
-  }
 }
 
 @media (hover: hover) {
