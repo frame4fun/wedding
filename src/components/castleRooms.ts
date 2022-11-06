@@ -64,7 +64,7 @@ export const castleCategories: CastleCategory[] = [
     rooms: [
       {
         Nom: 'Chambre double',
-        Info: "Certaines possèdent 2 lits simples, d'autres un lit doubles.",
+        Info: "Certaines possèdent 2 lits simples, d'autres un lit double.",
         Prix: 100,
         Image: Double,
       },
