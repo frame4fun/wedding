@@ -50,7 +50,7 @@ export default defineComponent({});
 <style scoped>
 .description {
   text-align: justify;
-  margin: 1rem 2rem;
+  margin: 1rem 0rem;
 }
 
 .category {
