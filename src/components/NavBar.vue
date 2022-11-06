@@ -110,7 +110,7 @@ ul {
   transition: all 0.3s ease;
   list-style-type: none;
   padding: 0;
-  min-width: 350px;
+  min-width: 300px;
 }
 ul.open {
   transform: scaleX(1);
