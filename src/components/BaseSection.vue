@@ -1,13 +1,13 @@
 <script lang="ts" setup></script>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   props: {
     id: { type: String, required: true },
-    title: { type: String, required: true }
-  }
+    title: { type: String, required: true },
+  },
 });
 </script>
 
@@ -37,7 +37,7 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 1rem;
+  padding: 0 2rem;
   width: 100%;
 }
 </style>

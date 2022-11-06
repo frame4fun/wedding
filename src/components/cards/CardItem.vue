@@ -37,7 +37,7 @@ li {
 }
 
 .card {
-  width: 250px;
+  width: var(--card-mobile-width);
   margin: 20px 0;
   background-color: var(--background-color);
   box-shadow: 0px 5px 20px #999;
@@ -91,7 +91,7 @@ li {
 @media (min-width: 1024px) {
   .card {
     height: 300px;
-    width: 325px;
+    width: var(--card-desktop-width);
     margin: 40px;
   }
 

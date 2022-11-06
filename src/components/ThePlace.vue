@@ -24,9 +24,8 @@ import imageLieu from '../assets/lieu.jpg';
           <p class="travel-mode">Voitures :</p>
           <p>
             Le Chateau des Clos est situé à 30 minutes de Paris, 5 minutes de la
-            sortie A10 Dourdan.
+            sortie A10 Dourdan. Un parking est présent sur le lieu.
           </p>
-          <p>Un parking est présent sur le lieu.</p>
         </div>
         <div>
           <p class="travel-mode">Transport en commun :</p>
@@ -49,7 +48,7 @@ import imageLieu from '../assets/lieu.jpg';
 <style scoped>
 .text-content {
   color: var(--color-text);
-  text-align: center;
+  text-align: justify;
   gap: 3rem;
   display: flex;
   flex-direction: column;
@@ -67,5 +66,11 @@ import imageLieu from '../assets/lieu.jpg';
 .subtitle {
   font-weight: bold;
   color: hsla(var(--orange), 1);
+}
+
+@media (min-width: 1024px) {
+  .text-content {
+    margin: 1rem;
+  }
 }
 </style>

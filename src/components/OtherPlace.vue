@@ -16,7 +16,7 @@ export default defineComponent({
     time: { type: Number, required: true },
     distance: { type: Number, required: true },
     price: { type: Number, required: false, default: 0 },
-    phoneNumber: { type: String, required: false, default: 'Non communiqué' },
+    phoneNumber: { type: String, required: false, default: 'N.C.' },
     description: { type: String, required: true },
   },
 });
@@ -27,7 +27,7 @@ export default defineComponent({
     <CardImportant>
       <CardIcon tooltip-text="Prix indicatif">
         <span v-if="price > 0">{{ price }}</span>
-        <span v-else>Non communiqué</span>
+        <span v-else>N.C.</span>
         <FontAwesomeIcon icon="fa-solid fa-euro-sign" />
       </CardIcon>
       <CardIcon :tooltip-text="`A ${distance} km`">
@@ -58,6 +58,12 @@ export default defineComponent({
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 325px;
+  width: calc(var(--card-mobile-width) - 1rem);
+}
+
+@media (min-width: 1024px) {
+  .truncateLongTexts {
+    width: calc(var(--card-desktop-width) - 1rem);
+  }
 }
 </style>

@@ -25,6 +25,9 @@
   --background-color: hsla(var(--white), 1);
 
   --section-gap: 160px;
+
+  --card-mobile-width: 250px;
+  --card-desktop-width: 325px;
 }
 
 *,
