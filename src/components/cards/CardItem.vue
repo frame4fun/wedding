@@ -10,9 +10,9 @@ export default defineComponent({
   },
   data() {
     return {
-      cardStyle: {
-        'justify-content': this.image === null ? 'center' : 'flex-start',
-        height: this.image === null ? '300px' : '450px',
+      cardClasses: {
+        card: true,
+        'card-withImage': this.image !== null,
       },
     };
   },
@@ -20,7 +20,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <li class="card" :style="cardStyle">
+  <li :class="cardClasses">
     <img v-if="image !== null" :src="image" />
     <div class="card-body">
       <div class="card-title">
@@ -37,7 +37,7 @@ li {
 }
 
 .card {
-  width: 325px;
+  width: 250px;
   margin: 20px 0;
   background-color: var(--background-color);
   box-shadow: 0px 5px 20px #999;
@@ -46,7 +46,12 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   overflow: hidden;
+}
+
+.card.card-withImage {
+  justify-content: flex-start;
 }
 
 .card img {
@@ -85,7 +90,13 @@ li {
 
 @media (min-width: 1024px) {
   .card {
+    height: 300px;
+    width: 325px;
     margin: 40px;
+  }
+
+  .card.card-withImage {
+    height: 450px;
   }
 }
 </style>
