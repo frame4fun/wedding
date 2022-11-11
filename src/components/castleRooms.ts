@@ -34,7 +34,7 @@ export const castleCategories: CastleCategory[] = [
       },
       {
         Nom: 'Chambre Richebourg',
-        Info: 'Cchambre double avec vue sur le Jardin à la française',
+        Info: 'Chambre double avec vue sur le Jardin à la française',
         Prix: 245,
         Image: Richebourg,
       },

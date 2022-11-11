@@ -62,17 +62,17 @@ h4 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: hsla(var(--pink), 1);
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: hsla(var(--orange), 1);
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: hsla(var(--violet), 1);
 }
 
@@ -85,8 +85,32 @@ h4 {
   margin: 1rem 0rem;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+}
+
 @media (min-width: 1024px) {
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
   .description-container {
     width: 50%;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 }
