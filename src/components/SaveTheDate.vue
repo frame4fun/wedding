@@ -32,8 +32,14 @@ export default {
         <h2 class="date">{{ formattedDate }}</h2>
         <CountDown :date="date" />
         <div class="form">
-          <form action="https://forms.gle/jgQDxBAcBmU9XmrT8" method="get" target="_blank">
-            <button type="submit">Dites nous si vous pouvez venir !</button>
+          <form
+            action="https://forms.gle/jgQDxBAcBmU9XmrT8"
+            method="get"
+            target="_blank"
+          >
+            <button class="button-rsvp" type="submit">
+              <span>Dites nous si vous pouvez venir !</span>
+            </button>
           </form>
         </div>
       </div>
@@ -94,6 +100,44 @@ export default {
 
 .form {
   margin-top: 3rem;
+}
+
+.button-rsvp {
+  background-color: hsla(var(--blue), 1);
+  border-radius: 10px;
+  border: 4px double hsla(var(--white), 0.9);
+  color: hsla(var(--white), 0.9);
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-rsvp span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button-rsvp span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button-rsvp:hover {
+  background-color: hsla(var(--violet), 1);
+}
+.button-rsvp:hover span {
+  padding-right: 25px;
+}
+.button-rsvp:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
