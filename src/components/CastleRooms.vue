@@ -12,18 +12,17 @@ export default defineComponent({});
 </script>
 
 <template>
-  <BaseSection id="castle-rooms" title="Les hébergements du château">
-    <div class="description-container">
-      <p class="description">
-        Toutes les chambres du château possèdent une salle de bain privative et
+  <BaseSection
+    id="castle-rooms"
+    title="Les hébergements du château"
+    :descriptions="[
+      `Toutes les chambres du château possèdent une salle de bain privative et
         sont équipées de serviettes, tapis de bain, produits d'accueil (gel
         douche, savon, bonnet de douche), sèche-cheveux. Jusqu'à 60 personnes
-        peuvent être hébergés sur place.
-      </p>
-      <p class="description">
-        Contacter l'un de nous pour réserver une de ces chambres.
-      </p>
-    </div>
+        peuvent être hébergés sur place.`,
+      `Contacter l'un de nous pour réserver une de ces chambres.`,
+    ]"
+  >
     <div
       v-for="castleCategory in castleCategories"
       :key="castleCategory.title"
@@ -48,11 +47,6 @@ export default defineComponent({});
 </template>
 
 <style scoped>
-.description {
-  text-align: justify;
-  margin: 1rem 0rem;
-}
-
 .category {
   display: flex;
   flex-direction: column;
@@ -60,11 +54,5 @@ export default defineComponent({});
   align-items: center;
   margin-top: 2rem;
   width: 100%;
-}
-
-@media (min-width: 1024px) {
-  .description-container {
-    width: 50%;
-  }
 }
 </style>

@@ -75,3 +75,18 @@ h4 {
   font-size: 1.8rem;
   color: hsla(var(--violet), 1);
 }
+
+.description-container {
+  margin-bottom: 2rem;
+}
+
+.description {
+  text-align: justify;
+  margin: 1rem 0rem;
+}
+
+@media (min-width: 1024px) {
+  .description-container {
+    width: 50%;
+  }
+}

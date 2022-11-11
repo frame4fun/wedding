@@ -12,31 +12,38 @@ export default defineComponent({
     imageIsLeft: { type: Boolean, required: false, default: true },
     imageAlt: { type: String, required: true },
     imageSrc: { type: String, required: true },
+    descriptions: {
+      type: Array,
+      required: false,
+      default() {
+        return [];
+      },
+    },
   },
 });
 </script>
 
 <template>
-  <BaseSection :id="id" :title="title">
+  <BaseSection :id="id" :title="title" :descriptions="descriptions">
     <div class="content">
-      <img
-        v-if="imageIsLeft"
-        :alt="imageAlt"
-        :src="imageSrc"
-        class="image-section"
-      />
+      <div v-if="imageIsLeft" class="image">
+        <img :alt="imageAlt" :src="imageSrc" class="image-section" />
+      </div>
+
       <slot />
-      <img
-        v-if="!imageIsLeft"
-        :alt="imageAlt"
-        :src="imageSrc"
-        class="image-section"
-      />
+      <div v-if="!imageIsLeft" class="image">
+        <img :alt="imageAlt" :src="imageSrc" class="image-section" />
+      </div>
     </div>
   </BaseSection>
 </template>
 
 <style scoped>
+.image {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
 .image-section {
   max-height: 50rem;
 }
@@ -48,6 +55,7 @@ export default defineComponent({
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  gap: 2rem;
 }
 
 @media (min-width: 1024px) {
