@@ -23,6 +23,10 @@ import imageContact from '../assets/assis-balcon.jpeg';
       </p>
     </div>
   </ImageSection>
+
+<h4>Merci à <a href="https://instagram.com/_wiload_?igshid=YmMyMTA2M2Y=">Maud</a> et <a href="https://instagram.com/jadeboumaza?igshid=YmMyMTA2M2Y=">Jade</a> pour les photos de ce site</h4>
+  
+
 </template>
 
 <style scoped>
