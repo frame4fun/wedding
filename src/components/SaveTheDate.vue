@@ -108,7 +108,7 @@ export default {
   border: 4px double hsla(var(--white), 0.9);
   color: hsla(var(--white), 0.9);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 20px;
   transition: all 0.5s;
   cursor: pointer;

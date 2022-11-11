@@ -52,7 +52,7 @@ header {
 nav {
   width: 100%;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -134,6 +134,12 @@ ul li a {
 @media (hover: hover) {
   ul li a:hover {
     color: var(--color-link-hover);
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 2rem;
   }
 }
 </style>
