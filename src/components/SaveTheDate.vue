@@ -108,7 +108,7 @@ export default {
   border: 4px double hsla(var(--white), 0.9);
   color: hsla(var(--white), 0.9);
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   padding: 20px;
   transition: all 0.5s;
   cursor: pointer;
@@ -191,6 +191,10 @@ export default {
 
   .info {
     font-size: 2rem;
+  }
+
+  .button-rsvp {
+    font-size: 1.7rem;
   }
 }
 </style>
