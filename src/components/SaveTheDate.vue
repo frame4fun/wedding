@@ -103,7 +103,7 @@ export default {
 }
 
 .button-rsvp {
-  background-color: hsla(var(--blue), 1);
+  background-color: hsla(var(--violet), 1);
   border-radius: 10px;
   border: 4px double hsla(var(--white), 0.9);
   color: hsla(var(--white), 0.9);
@@ -130,7 +130,7 @@ export default {
   transition: 0.5s;
 }
 .button-rsvp:hover {
-  background-color: hsla(var(--violet), 1);
+  background-color: hsla(var(--orange), 1);
 }
 .button-rsvp:hover span {
   padding-right: 25px;
