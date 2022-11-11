@@ -5,6 +5,7 @@ import ThePlace from './components/ThePlace.vue';
 import CastleRooms from './components/CastleRooms.vue';
 import OtherPlaces from './components/OtherPlaces.vue';
 import Program from './components/Program.vue';
+import Contact from './components/Contact.vue';
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Program from './components/Program.vue';
     <ThePlace />
     <CastleRooms />
     <OtherPlaces />
+    <Contact />
   </main>
 </template>
 

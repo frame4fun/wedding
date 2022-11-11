@@ -45,7 +45,7 @@ export default defineComponent({
 }
 
 .image-section {
-  max-height: 50rem;
+  max-height: 40rem;
 }
 
 .content {
