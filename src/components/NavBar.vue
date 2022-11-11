@@ -35,6 +35,7 @@ export default defineComponent({
         <li><a href="#place">Le Lieu</a></li>
         <li><a href="#castle-rooms">Les hébergements du château</a></li>
         <li><a href="#other-places">Les hébergements autour du château</a></li>
+         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>

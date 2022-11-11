@@ -38,7 +38,7 @@ export default {
             target="_blank"
           >
             <button class="button-rsvp" type="submit">
-              <span>Dites nous si vous pouvez venir !</span>
+              <span>Confirmez nous votre présence !</span>
             </button>
           </form>
         </div>
