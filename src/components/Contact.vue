@@ -14,9 +14,13 @@ import imageContact from '../assets/assis-balcon.jpeg';
     :image-is-left="false"
   >
     <div class="text-content">
-        <p class="subtitle">Pour plus de question :</p>
-        <p>vous pouvez contacter Stephanie si vous avez des questions sur l'organisation :  <a :href="`tel: 0608836806`">06 08 83 68 06 </a> </p>
-        <p>ou nous envoyer un mail :  <a href="mailto:ag-mariage@ilymail.fr">Ecrivez nous</a></p>
+      <h3>Pour plus de questions</h3>
+      <p>
+        Vous pouvez contacter Stephanie (notre organisatrice de mariage) au
+        <a :href="`tel: 0608836806`">06 08 83 68 06 </a> pour toutes questions
+        relatives à l'organisation ou nous envoyer un mail à l'adresse
+        <a href="mailto:ag-mariage@ilymail.fr">ag-mariage@ilymail.fr</a>
+      </p>
     </div>
   </ImageSection>
 </template>
@@ -30,14 +34,10 @@ import imageContact from '../assets/assis-balcon.jpeg';
   flex-direction: column;
 }
 
-.subtitle {
-  font-weight: bold;
-  color: hsla(var(--orange), 1);
-}
-
 @media (min-width: 1024px) {
   .text-content {
     margin: 1rem;
+    max-width: 50%;
   }
 }
 </style>

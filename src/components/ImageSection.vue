@@ -26,25 +26,20 @@ export default defineComponent({
 <template>
   <BaseSection :id="id" :title="title" :descriptions="descriptions">
     <div class="content">
-      <div v-if="imageIsLeft" class="image">
-        <img :alt="imageAlt" :src="imageSrc" class="image-section" />
+      <div v-if="imageIsLeft" class="image-section">
+        <img :alt="imageAlt" :src="imageSrc" />
       </div>
 
       <slot />
-      <div v-if="!imageIsLeft" class="image">
-        <img :alt="imageAlt" :src="imageSrc" class="image-section" />
+      <div v-if="!imageIsLeft" class="image-section">
+        <img :alt="imageAlt" :src="imageSrc" />
       </div>
     </div>
   </BaseSection>
 </template>
 
 <style scoped>
-.image {
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
-.image-section {
+.image-section > img {
   max-height: 40rem;
 }
 
@@ -61,6 +56,10 @@ export default defineComponent({
 @media (min-width: 1024px) {
   .content {
     flex-wrap: nowrap;
+  }
+
+  .image-section {
+    max-width: 40%;
   }
 }
 </style>
