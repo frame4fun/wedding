@@ -25,12 +25,12 @@ export default defineComponent({
 <template>
   <CardItem :name="name">
     <CardImportant>
-      <CardIcon tooltip-text="Prix indicatif">
+      <CardIcon>
         <span v-if="price > 0">{{ price }}</span>
         <span v-else>N.C.</span>
         <FontAwesomeIcon icon="fa-solid fa-euro-sign" />
       </CardIcon>
-      <CardIcon :tooltip-text="`A ${distance} km`">
+      <CardIcon>
         <FontAwesomeIcon icon="fa-solid fa-clock" />
         <span>{{ time }} minutes</span>
       </CardIcon>

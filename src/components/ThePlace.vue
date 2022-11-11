@@ -39,13 +39,13 @@ import imageLieu from '../assets/lieu.jpg';
         </CardItem>
         <CardItem name="Transport en commun">
           <CardImportant>
-            <CardIcon tooltip-text="Prix indicatif">
-              <span>12,5</span>
+            <CardIcon>
+              <span>6,40</span>
               <FontAwesomeIcon icon="fa-solid fa-euro-sign" />
             </CardIcon>
-            <CardIcon tooltip-text="Depuis châtelet">
+            <CardIcon>
               <FontAwesomeIcon icon="fa-solid fa-clock" />
-              <span>1h30</span>
+              <span>2 heures</span>
             </CardIcon>
           </CardImportant>
           <div>
