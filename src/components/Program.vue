@@ -15,11 +15,11 @@ export default {
       activities: [
         {
           name: 'Cérémonie laïque',
-          time: '17h00',
+          time: '16h45',
         },
         {
           name: 'Réception',
-          time: '18h30',
+          time: '18h00',
         },
         {
           name: 'Brunch',
@@ -36,7 +36,7 @@ export default {
     id="program"
     :image-src="imagePyramide"
     image-alt="Assis devant la pyramide du Louvres"
-    title="Programme de la journée"
+    title="Programme des festivités"
   >
     <div class="timeline">
       <Activity
@@ -45,6 +45,7 @@ export default {
         :activity="activity"
       />
     </div>
+
   </ImageSection>
 </template>
 

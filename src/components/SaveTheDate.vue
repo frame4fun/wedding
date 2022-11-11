@@ -31,6 +31,11 @@ export default {
         <span class="divider" />
         <h2 class="date">{{ formattedDate }}</h2>
         <CountDown :date="date" />
+        <div class="form">
+          <form action="https://forms.gle/jgQDxBAcBmU9XmrT8" method="get" target="_blank">
+            <button type="submit">Dites nous si vous pouvez venir !</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -85,6 +90,10 @@ export default {
 .info {
   font-size: 1.3rem;
   color: hsla(var(--white));
+}
+
+.form {
+  margin-top: 3rem;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
