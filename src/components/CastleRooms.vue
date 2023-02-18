@@ -16,10 +16,9 @@ export default defineComponent({});
     id="castle-rooms"
     title="Les hébergements du château"
     :descriptions="[
-      `Toutes les chambres du château possèdent une salle de bain privative et
+      `Tous les hébergements du château possèdent une salle de bain privative et
         sont équipées de serviettes, tapis de bain, produits d'accueil (gel
-        douche, savon, bonnet de douche), sèche-cheveux. Jusqu'à 60 personnes
-        peuvent être hébergés sur place.`,
+        douche, savon, bonnet de douche), sèche-cheveux.`,
       `Contacter l'un de nous pour réserver une de ces chambres.`,
     ]"
   >
