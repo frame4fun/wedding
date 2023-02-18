@@ -39,7 +39,7 @@ export const castleCategories: CastleCategory[] = [
   },
   {
     title: 'Les chambres de la dépendance',
-    description: '6 chambres doubles de 14m2 et 1 chambre quadruple de 20m2',
+    description: '3 chambres doubles de 14m2 et 1 chambre quadruple de 20m2',
     rooms: [
       {
         Nom: 'Chambre double',
@@ -63,12 +63,6 @@ export const castleCategories: CastleCategory[] = [
         Info: '4 personnes, 2 lits doubles, 19m2',
         Prix: 170,
         Image: Glycines,
-      },
-      {
-        Nom: 'Les Nénuphars',
-        Info: '3 personnes, 1 lit double et 1 lit simple, 15m2',
-        Prix: 130,
-        Image: Nenuphars,
       },
     ],
   },
