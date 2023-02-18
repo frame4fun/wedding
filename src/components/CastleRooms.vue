@@ -18,7 +18,7 @@ export default defineComponent({});
     :descriptions="[
       `Tous les hébergements du château possèdent une salle de bain privative et
         sont équipées de serviettes, tapis de bain, produits d'accueil (gel
-        douche, savon, bonnet de douche), sèche-cheveux.`,
+        douche, savon, bonnet de douche), sèche-cheveux. Les hébergements du château ne sont disponibles que pour la nuit du samedi.`,
       `Contacter l'un de nous pour réserver une de ces chambres.`,
     ]"
   >
